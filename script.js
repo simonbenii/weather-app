@@ -179,16 +179,16 @@ function updateMeasurement(data, isMetric) {
 function refreshBackground(data) {
   const videoElement = document.querySelector('#bgvid');
   if (data.current.is_day === 1 && !data.current.condition.text.includes('rain')) {
-    videoElement.querySelector('source').src = '/video/clear-day.mp4';
+    videoElement.querySelector('source').src = './video/clear-day.mp4';
   }
   if (data.current.is_day === 1 && data.current.condition.text.includes('rain')) {
-    videoElement.querySelector('source').src = '/video/rainy-day.mp4';
+    videoElement.querySelector('source').src = './video/rainy-day.mp4';
   }
   if (data.current.is_day === 0 && !data.current.condition.text.includes('rain')) {
-    videoElement.querySelector('source').src = '/video/clear-night.mp4';
+    videoElement.querySelector('source').src = './video/clear-night.mp4';
   }
   if (data.current.is_day === 0 && data.current.condition.text.includes('rain')) {
-    videoElement.querySelector('source').src = '/video/rainy-night.mp4';
+    videoElement.querySelector('source').src = './video/rainy-night.mp4';
   }
   videoElement.load();
 }
