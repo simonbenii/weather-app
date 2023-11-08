@@ -1,0 +1,155 @@
+#bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+body {
+  /* background-image: url('/img/bg.jpg'); */
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  background-size: cover;
+}
+
+input {
+  height: 40px;
+  width: 200px;
+  text-align: left;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0px;
+  transition: 0.2s;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+img {
+  max-height: 600px;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+#mainCellEl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-style: rounded;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  color: aliceblue;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+}
+
+.cellEl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-style: rounded;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  color: aliceblue;
+  padding: 10px;
+  width: 170px;
+  height: 170px;
+}
+
+#contentSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+  align-content: end;
+}
+
+#contentMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+#forecastDiv {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-style: rounded;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  color: aliceblue;
+}
+
+.forecastCell {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 300px;
+}
+
+#cityInput {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+  width: 370px;
+  font-size: large;
+}
+
+.unit {
+  transition: 0.25s;
+}
+.unit:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.unit:active {
+  cursor: pointer;
+  opacity: 0.5;
+}
